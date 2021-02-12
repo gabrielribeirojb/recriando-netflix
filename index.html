@@ -61,8 +61,72 @@
         </div><!--texto-destaque-->       
     </section><!--destaque-->
 
-    <section class="vitrine"></section>
+    <section class="vitrine">
+
+        <div class="vitrine-flex">
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image: url('images/arrow.jpg');"></div>
+			</div>
+
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image: url('images/suits.jpeg');"></div>
+			</div>
+
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image: url('images/arrow.jpg');"></div>
+			</div>
+
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image: url('images/arrow.jpg');"></div>
+			</div>
+
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image: url('images/suits.jpeg');"></div>
+			</div>
+
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image: url('images/arrow.jpg');"></div>
+			</div>
+
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image: url('images/arrow.jpg');"></div>
+			</div>
+
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image: url('images/suits.jpeg');"></div>
+			</div>
+
+			<div class="vitrine-single-banner">
+				<div class="vitrine-wraper" style="background-image: url('images/arrow.jpg');"></div>
+			</div>
+	</div>	<!--vitrine-flex-->
+
+    </section><!--vitrine-->
 
 </body>
+
+<script src="jquery.js"></script>
+<script src="slick.min.js"></script>
+
+<script>
+    $('.vitrine-flex').slick({
+        dots:false,
+        arrows:false,
+        infinite:false,
+        centerMode:false,
+        speend:1000,
+        slidesToShow:6,
+        autoplay:true,
+        autoplaySpeed:3000,
+        pauseOnHover:false,
+        responsive: [
+            {
+                breakpoint:768,
+                settings:{
+                    slidesToShow:3
+                }
+            }]
+    });
+</script>
 
 </html>

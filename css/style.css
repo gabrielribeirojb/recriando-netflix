@@ -7,6 +7,7 @@
 
 body{
     background: black;
+    overflow-x: hidden;
 }
 
 .center{
@@ -14,6 +15,10 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2%;
+}
+
+.clear{
+    clear: both;
 }
 
 header > .center{
@@ -175,4 +180,59 @@ section.destaque{
 
 .texto-destaque i{
     margin-right: 8px;
+}
+
+section.vitrine .vitrine-flex{
+	width: 96%;
+	margin-left: 4%;
+	position: relative;
+	z-index: 4;
+}
+
+
+.vitrine-single-banner{
+	width: 100%;
+	padding-top: calc(16.6% / 2);
+	float: left;
+	position: relative;
+}
+
+.vitrine-wraper{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    cursor: pointer;
+    z-index: 4;
+}
+.vitrine-wraper:hover{
+	transition: 1s;
+	transform:scale(1.2,1.2);
+    z-index: 5;
+}
+
+@media screen and (max-width:768px){
+    
+    section.vitrine .vitrine-flex{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .vitrine-single-banner{
+        width: 33.3%;
+    }
+
+    ul.lista-esquerda{
+        display: none;
+        width: 0;
+    }
+
+    ul.lista-direita{
+        width: 80%;
+        text-align: right;
+    }
 }
