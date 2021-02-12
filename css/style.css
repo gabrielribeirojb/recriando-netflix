@@ -6,7 +6,7 @@
 }
 
 body{
-    background: gray;
+    background: black;
 }
 
 .center{
@@ -110,9 +110,18 @@ section.destaque{
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 70vh;
-    position: absolute;
+    height: 70vh;
+    position: relative;
     z-index: 1;
+    overflow: hidden;
+}
+
+#video-destaque{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .overlay{
@@ -128,7 +137,7 @@ section.destaque{
 .texto-destaque{
     position: relative;
     color: white;
-    margin-top: 80px;
+    padding-top: 80px;
     margin-left: 4%;
     z-index: 3;
 }
@@ -155,6 +164,7 @@ section.destaque{
     padding: 10px 20px;
     display: inline-block;
     margin-right: 8px;
+    margin-bottom: 8px;
     transition: 0.5s;
 }
 
